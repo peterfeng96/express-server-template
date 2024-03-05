@@ -1,0 +1,13 @@
+/* 
+ALL REQUESTS THROUGH /ADMIN
+*/
+
+const express = require("express");
+
+const router = express.Router();
+
+router.get("/", (req, res) => {
+  res.send("admin");
+});
+
+module.exports = router;
